@@ -1,0 +1,14 @@
+﻿private void AddEventLog(String info, String name)
+        {
+            DateTime dt = DateTime.Now;
+
+            SqlConnection conn = new SqlConnection(CONNECTIONINFO);
+            string query = String.Format("INSERT INTO EventLogs (EventInformation, Name, DateTime) Values ('{0}', '{1}', '{2}')", info, name, dt);
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+
+        }

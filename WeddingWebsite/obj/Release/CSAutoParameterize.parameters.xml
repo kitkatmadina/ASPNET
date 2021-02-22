@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="SQLSERVERCONN1-Web.config Connection String" description="SQLSERVERCONN1 Connection String used in web.config by the application to access the database." defaultValue="Data Source=DESKTOP-RDCAOQ7;Initial Catalog = WeddingDB; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Kirsten\\Box\ Sync\\Documents\\Code\ Library\\ASPNET\\WeddingWebsite\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SQLSERVERCONN1']/@connectionString" />
+  </parameter>
+</parameters>

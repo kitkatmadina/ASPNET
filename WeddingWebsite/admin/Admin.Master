@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="WeddingWebsite.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>M&K's Wedding Site (ADMIN MODE)</title>
+    <link href="../Stylesheets/HeaderFooter.css" rel="stylesheet" />
+    <link href="../Stylesheets/Admin.css" rel="stylesheet" />
+    <script src="../Scripts/Countdown.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="topnav">
+                
+            </div>
+            <div class="text-mask">
+                <h1 class="topnav-heading"> Micah & Kirsten </h1>
+                <h4 id ="Countdown">Days Until I Do... <span id="WeddingCountdown"></span></h4>
+
+                <asp:LinkButton runat="server" ID="lbHome" OnClick="lbNav_Click" CssClass="topnav-link"> Home </asp:LinkButton>
+                <asp:LinkButton runat="server" ID="lbGuests" OnClick="lbNav_Click" CssClass="topnav-link">Edit Guests</asp:LinkButton>
+                <asp:LinkButton runat="server" ID="lbGallery" OnClick="lbNav_Click" CssClass="topnav-link">Edit Gallery</asp:LinkButton>
+                <asp:LinkButton runat="server" ID="lbSignOut" OnClick="lbSignOut_Click" CssClass="topnav-so">Sign Out</asp:LinkButton>
+
+            </div>
+
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+                
+
+            <div class="footer" id="footer">
+                <p>
+                    Click
+                        <asp:LinkButton ID="lbEnterGuest" runat="server" OnClick="lbEnterGuest_Click" >Here</asp:LinkButton>
+                    to view site as a Guest.
+                </p>
+            </div>
+
+
+        </div>
+    </form>
+</body>
+</html>

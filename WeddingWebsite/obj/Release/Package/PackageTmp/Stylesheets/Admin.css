@@ -1,0 +1,135 @@
+﻿
+h1, h2 {
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline
+}
+
+
+.column {
+    float: left;
+    width: 45%;
+    padding: 0 10px;
+}
+
+.column-left {
+    width: 25%;
+    padding: 0 10px;
+    float: left;
+}
+.column-right {
+    width: 70%;
+    padding: 0 10px;
+    float: left;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1300px) {
+    .column, .column-left, .column-right {
+        width: 100%;
+    }
+}
+
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+}
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/* Style the counter cards */
+.card {
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+
+    .card .table {
+        text-align: left
+    }
+
+.card-less-padding {
+    padding: 10px;
+    margin: 10px;
+}
+
+    .card-less-padding h2 {
+        padding:0px;
+        margin:0px;
+        text-align: center;
+    }
+
+
+.a-button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+    .a-button:hover {
+        background-color: #f1f1f1;
+    }
+
+.a-textbox {
+    color: grey;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+
+.a-textbox2 {
+    color: grey;
+    font-size: 11px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+}
+
+.a-textbox-gv-small {
+    color: grey;
+    font-size: 11px;
+    padding: 5px;;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+    border-style: hidden;
+    max-width:75px;
+}
+
+.a-textbox-gv-large {
+    color: grey;
+    font-size: 11px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+    border-style: hidden;
+    max-width: 100px;
+}

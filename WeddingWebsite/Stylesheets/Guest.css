@@ -1,0 +1,102 @@
+﻿html, body {
+    height: 100%;
+    margin: 0px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    background-color: #edc6c5; /*pink */
+    /* red */
+    /*
+        background-color: #420100;
+        color: white;
+    */
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline
+}
+
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+}
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/* Style the counter cards */
+.card {
+    padding: 16px;
+    text-align: center;
+}
+
+    .card .td .g-textbox2 {
+        text-align: left;
+    }
+
+    .card .td .g-button {
+        text-align: left;
+    }
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+.g-button {
+    background-color: #b5b5b5;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+    .g-button:hover {
+        background-color: #f1f1f1;
+    }
+
+.g-textbox {
+    color: grey;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 12px;
+}
+
+.g-textbox2 {
+    color: grey;
+    font-size: 11px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+}
